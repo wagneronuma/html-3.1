@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário para a corrida</title>
+  </head>
+  <h1>Formulário</h1>
+  <body>
+    <form action="get">
+      <label for="firstname">Nome</label>
+      <input
+        type="text"
+        placeholder="Seu primeiro nome"
+        id="firstname"
+        name="firstname"
+        required
+      />
+      <label for="lastname">Sobrenome</label>
+      <input
+        type="text"
+        placeholder="Seu sobrenome"
+        id="lastname"
+        name="lastname"
+        required
+      />
+      <br />
+      <br />
+      <p>Selecione uma corrida</p>
+      <label for="funrun5km">Corrida divertida 5km</label>
+      <input
+        type="radio"
+        name="racetype"
+        id="funrun5km"
+        value="funrun5km"
+        required
+      />
+      <br />
+      <label for="halfmarat">Meia maratona</label>
+
+      <input
+        type="radio"
+        name="racetype"
+        id="halfmarat"
+        value="halfmarat"
+        required
+      />
+      <br />
+      <label for="fullmarat">Maratona Completa</label>
+
+      <input
+        type="radio"
+        name="racetype"
+        id="fullmarat"
+        value="fullmarat"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Seu Email</label>
+      <input
+        type="email"
+        placeholder="email"
+        id="email"
+        name="email"
+        required
+      />
+
+      <label for="password">Sua senha</label>
+      <input
+        type="password"
+        placeholder="senha"
+        id="password"
+        name="password"
+        required
+      />
+      <br />
+      <br />
+      <label for="runagecateg">Selecione sua faixa etária</label>
+      <select name="runagecateg" id="runagecateg" required>
+        <option value=""></option>
+        <option value="kids">Menor que 18</option>
+        <option value="ya">18-30</option>
+        <option value="adult">30-50</option>
+        <option value="seniors">50+</option>
+      </select>
+      <br />
+      <br />
+      <button>Registrar</button>
+    </form>
+  </body>
+</html>
